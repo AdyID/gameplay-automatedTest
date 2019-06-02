@@ -14,6 +14,9 @@ wait(Template(r"1.png", record_pos=(0.18, 0.173), resolution=(2960, 1440)))
 touch(Template(r"2.png", record_pos=(-0.004, 0.181), resolution=(2960, 1440)))
 if exists(Template(r"3.png", record_pos=(-0.003, -0.143), resolution=(2960, 1440))):
     touch(Template(r"4.png", record_pos=(0.183, -0.142), resolution=(2960, 1440)))
+if exists(Template(r"300.png", record_pos=(-0.002, -0.168), resolution=(2960, 1440))):
+    touch(Template(r"311.png", record_pos=(-0.005, 0.17), resolution=(2960, 1440)))
+    sleep(2)
 
 touch(Template(r"5.png", record_pos=(0.385, 0.17), resolution=(2960, 1440)))
 touch(Template(r"6.png", record_pos=(0.002, 0.127), resolution=(2960, 1440)))
@@ -282,7 +285,7 @@ while not exists(Template(r"9.png", record_pos=(-0.003, -0.151), resolution=(296
                     break;
         if exists(Template(r"157.png", record_pos=(-0.084, 0.176), resolution=(2960, 1440))):
             assert_exists(Template(r"158.png", record_pos=(-0.084, 0.176), resolution=(2960, 1440)),"Spiral orange combo exists")
-            touch(Template(r"tpl1559482063006.png", record_pos=(-0.084, 0.176), resolution=(2960, 1440)))
+            touch(Template(r"158.png", record_pos=(-0.084, 0.176), resolution=(2960, 1440)))
             sleep(2)
             if exists(Template(r"159.png", record_pos=(-0.084, 0.178), resolution=(2960, 1440))):
                 assert_exists(Template(r"160.png", record_pos=(-0.084, 0.178), resolution=(2960, 1440)),"Orange bottle exists")
